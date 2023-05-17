@@ -32,4 +32,8 @@ triangle = Shapes.EqualTriange(Vector2(0,0), 5)
 
 plot(triangle, format="<")
 
+circle = Shapes.Circle(Vector2(0,0), 3, 50)
+
+plot(circle, "o")
+
 show()
