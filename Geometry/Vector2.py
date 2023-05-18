@@ -51,9 +51,11 @@ class Vector2:
         otherX, otherY = power.getComponents()
 
         return Vector2(selfX ** otherX, selfY ** otherY)
+    def __int__(self):
+        return self.magnitude()
     
     def magnitude(self):
-        return abs(self.x) + abs(self.y)
+        return math.sqrt((self.x**2) + (self.y**2))
     def inverse(self):
         selfX, selfY = self.getComponents()
         return Vector2(1/selfX, 1/selfY)
